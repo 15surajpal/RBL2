@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>toggle</title>
+</head>
+
+<body>
+    <div class="container">
+        <section class="showcase">
+            <header>
+                <div class="logo">
+                    CO2 Emission
+                </div>
+                <div class="toggle"></div>
+            </header>
+            <video src="images/factory gas.mp4" muted autoplay loop></video>
+            <div class="overlay"></div>
+            <div class="text">
+                <h2>Lorem!</h2>
+                <h3>Lorem, ipsum dolor sit</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas quidem aperiam fugiat quod
+                    doloribus eligendi soluta nihil suscipit iste facilis, et enim alias molestiae modi, odit dolores
+                    adipisci quam earum deleniti tempora excepturi veniam assumenda ullam? Aliquid, repellat ex
+                    voluptate ab est molestias distinctio laborum consectetur, recusandae excepturi, ullam ipsum?</p>
+                <a href="#">About us<i class="fa fa-arrow-right"></i></a>    
+            </div>
+            <ul class="socials">
+                <li class="social"><a href=""><i class="fa fa-facebook-square"></i></a></li>
+                <li class="social"><a href=""><i class="fa fa-twitter"></i></a></li>
+                <li class="social"><a href=""><i class="fa fa-instagram"></i></a></li>
+            </ul>
+        </section>
+        <div class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">E1</a></li>
+                <li><a href="#">E2</a></li>
+                <li><a href="#">E3</a></li>
+                <li><a href="#">E4</a></li>
+                <li><a href="#">E5</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script>
+    const menutoggle= document.querySelector('.toggle')
+    const showcase = document.querySelector('.showcase')
+
+    menutoggle.addEventListener('click',()=>{
+        menutoggle.classList.toggle('active')
+        showcase.classList.toggle('active')
+    })
+</script>
+
+</html>
